@@ -1,0 +1,163 @@
+/*
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: #ffffcc;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../images/menu-border.png') 33 stretch;
+    border-image-slice: 33%;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 30px 2%;
+    height: 50px;
+    background-color: rgb(21, 71, 148);
+}
+
+header nav{
+    float: left;
+}
+
+header nav.menu ul{
+    list-style-type: none;
+}
+
+header nav.menu ul li{
+    float: left;
+    font-size: 23px;
+    padding: 0 20px;
+    margin-top: -11px;
+}
+
+header nav.menu ul a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+header nav.menu a:hover{
+    color: #F9EC88;
+}
+
+section div.background{
+    width: 100%;
+    height: calc(100vh - 130px);
+    min-height: 600px;
+    background-image: url('../images/stardewbackground.png');
+    background-position: center;
+}
+
+section.jogo-informacao{
+    background-color: #ffffcc;
+    padding: 50px;
+}
+
+section.jogo-informacao .container{
+    max-width: 800px;
+}
+
+
+section.jogo-informacao .sobre{
+    padding: 40px 2%;
+    border: 10px solid transparent;
+    border-image: url('../images/menu-border.png') 33 stretch;
+    border-image-slice: 33%;
+}
+
+.jogo-informacao .sobre h2{
+    font-size: 50px;
+    text-align: center;
+    color: #0066cc;
+}
+
+.jogo-informacao .sobre p{
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+section.autor-container{
+    padding: 40px 2%;
+    background-color: #e2e2a9;
+	width: 100%;
+}
+
+section.autor-container .container{
+    max-width: 900px;
+}
+
+section.autor-container .img-autor{
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+section.autor-container .descricao-autor{
+    width: 55%;
+    float: right;
+}
+
+section.autor-container .descricao-autor h2{
+    color: #0066cc;
+    font-size: 35px;
+    margin-bottom: 17px;
+}
+
+section.autor-container .descricao-autor p{
+    font-size: 22px;
+}
+
+
+footer{
+    padding: 20px 2%;
+    background-color: rgb(21, 71, 148);
+}
+
+footer p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+
+    section.autor-container .descricao-autor{
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+
+
+    section.autor-container .img-autor{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
